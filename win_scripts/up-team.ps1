@@ -28,7 +28,7 @@ if (-not $TeamPort.ContainsKey($Team)) {
 }
 docker compose up -d --build
 
-$composePath = "C:\Users\Mohammadi\Desktop\programmin\python\software eng\Software-Engineering-1404-01_G8\team$Team\docker-compose.yml"
+$composePath = "C:\Users\Sina\Desktop\Se_project\Software-Engineering-1404-01_G8\team$Team\docker-compose.yml"
 if (-not (Test-Path $composePath)) {
   throw "Missing $composePath"
 }
