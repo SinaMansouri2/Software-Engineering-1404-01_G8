@@ -20,7 +20,7 @@ class WordCardView(View):
     def post(self, request):
         """Handles AI generation requests"""
         word_text = request.POST.get("word") # Can be empty for random
-        user_id = request.user.id
+        user_id = str(request.user.id)
 
         try:
             # 1. Get JSON from AI

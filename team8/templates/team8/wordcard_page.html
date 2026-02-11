@@ -188,7 +188,7 @@
 
         <!-- Action Button -->
         <button class="btn-next" id="nextBtn" onclick="generateNewWord()">
-            Generate Next Word ✨
+            Generate ✨
         </button>
     </div>
     <script>
@@ -257,10 +257,10 @@
             }
         } catch (error) {
             console.error("Error:", error);
-            alert("Failed to connect to Team 8 server!");
+            alert(error);
         } finally {
             btn.disabled = false;
-            btn.textContent = "Generate Next Word ✨";
+            btn.textContent = "Generate ✨";
         }
     }
 

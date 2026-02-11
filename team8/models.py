@@ -1,7 +1,7 @@
 from django.db import models
 
 class LearningWord(models.Model):
-    user_id = models.BigIntegerField() 
+    user_id = models.CharField(max_length=255, db_index=True) 
     word = models.CharField(max_length=100)
     
     ipa_pronunciation = models.CharField(max_length=100, blank=True)
