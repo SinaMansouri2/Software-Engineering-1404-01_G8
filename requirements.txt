@@ -7,3 +7,11 @@ PyMySQL
 gunicorn
 whitenoise
 requests
+groq
+python-dotenv
+Pillow
+gtts
+fal-client
+openai
+huggingface_hub 
+pillow
